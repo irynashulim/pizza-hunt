@@ -110,6 +110,7 @@ function handleNewCommentSubmit(event) {
   }
 
   const formData = { commentBody, writtenBy };
+  
   fetch(`/api/comments/${pizzaId}`, {
     method: 'POST',
     headers: {
