@@ -38,6 +38,7 @@ const commentController = {
       .catch(err => res.json(err));
   },
 
+  
   // remove reply
   removeReply({ params }, res) {
     Comment.findOneAndUpdate(
@@ -47,7 +48,7 @@ const commentController = {
     )
       .then(dbPizzaData => res.json(dbPizzaData))
       .catch(err => res.json(err));
-  }
+  },
   
   // remove comment
   removeComment({ params }, res) {
